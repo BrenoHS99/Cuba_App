@@ -15,8 +15,10 @@ class MainApp extends StatelessWidget {
           title: Text("CUBA", style: TextStyle(fontWeight: FontWeight.w900)),
           backgroundColor: Color.fromRGBO(224, 224, 224, 1),
         ),
-        body: SingleChildScrollView(
-          child: Column(
+        body: 
+        SingleChildScrollView(
+          child:
+          Column(
             children: [
               Container(
                 margin: EdgeInsets.only(top: 40),
@@ -29,13 +31,19 @@ class MainApp extends StatelessWidget {
                       decoration:
                         BoxDecoration(
                           color: Color.fromRGBO(196, 196, 196, 1),
-                          borderRadius: BorderRadius.circular(25)
+                          borderRadius: BorderRadius.circular(15)
                         ),
-                      padding: EdgeInsets.all(5),
+                      padding: EdgeInsets.all(10),
                       child:
                         Text(
                           "Texto texto texto texto texto texto texto texto texto texto, " 
-                          "textoijsdmnlfikmsd",
+                          "textoijsdmnlfikmsd "
+                          "textoijsdmnlfikmsd "
+                          "textoijsdmnlfikmsd "
+                          "textoijsdmnlfikmsd "
+                          "textoijsdmnlfikmsd "
+                          "textoijsdmnlfikmsd "
+                          "textoijsdmnlfikmsd ",
                           style: TextStyle(
                             fontSize: 25
                           ))
@@ -46,35 +54,40 @@ class MainApp extends StatelessWidget {
                   ]
                 )
               ),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-              child:
-               Row(children: [
-                Image.asset(
-                      "img/cuba_bandeira.png"
-                    ),Image.asset(
-                      "img/cuba_bandeira.png"
+              Container(
+                height: 50,
+              ),
+              SizedBox(
+                height: 332,
+                width: 1200,
+                child:
+                  CarouselView(
+                  enableSplash: false,
+                  itemExtent: 500,
+                  shrinkExtent: 500,
+                  itemSnapping: true,
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    Image.asset(
+                      "img/imagembonita1.png"
                     ),
-                Image.asset(
-                      "img/cuba_bandeira.png"
+                    Image.asset(
+                      "img/imagembonita2.png"
                     ),
-                Image.asset(
-                      "img/cuba_bandeira.png"
+                    Image.asset(
+                      "img/imagembonita3.png"
                     ),
-                Image.asset(
-                      "img/cuba_bandeira.png"
+                    Image.asset(
+                      "img/imagembonita4.png"
                     ),
-                Image.asset(
-                      "img/cuba_bandeira.png"
+                    Image.asset( 
+                      "img/imagembonita5.png"
                     ),
-                Image.asset(
-                      "img/cuba_bandeira.png"
-                    )
-              ],)
-              
-              )
             ],
           )
+          ),
+          ],
+        )
         )
       ),
     );
