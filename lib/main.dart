@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:cuba_app/cultura.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const MaterialApp (title: "App",
+      home: MainApp(),));
 }
 
 class MainApp extends StatelessWidget {
@@ -27,7 +29,7 @@ class MainApp extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                      width: 500,
+                      width: 250,
                       decoration:
                         BoxDecoration(
                           color: Color.fromRGBO(196, 196, 196, 1),
@@ -36,35 +38,33 @@ class MainApp extends StatelessWidget {
                       padding: EdgeInsets.all(10),
                       child:
                         Text(
-                          "Texto texto texto texto texto texto texto texto texto texto, " 
-                          "textoijsdmnlfikmsd "
-                          "textoijsdmnlfikmsd "
-                          "textoijsdmnlfikmsd "
-                          "textoijsdmnlfikmsd "
-                          "textoijsdmnlfikmsd "
-                          "textoijsdmnlfikmsd "
-                          "textoijsdmnlfikmsd ",
+                          "Cuba é um país localizado no Caribe, " 
+                          "na América Central, sendo formada por uma grande ilha principal e várias ilhas menores. "
+                          "Sua capital é Havana e o idioma oficial é o espanhol. "
+                          "Além disso, Cuba é conhecida por seu sistema político socialista e por sua relevância histórica na região. "
+                          "A moeda oficial do país é o peso cubano.",
                           style: TextStyle(
-                            fontSize: 25
+                            fontSize: 15
                           ))
                     ),
                     Image.asset(
+                      width: 250,
                       "img/cuba_bandeira.png"
                     )
                   ]
                 )
               ),
               Container(
-                height: 50,
+                height: 25,
               ),
               SizedBox(
-                height: 332,
-                width: 1200,
+                height: 230,
+                width: 600,
                 child:
                   CarouselView(
                   enableSplash: false,
-                  itemExtent: 500,
-                  shrinkExtent: 500,
+                  itemExtent: 350,
+                  shrinkExtent: 350,
                   itemSnapping: true,
                   scrollDirection: Axis.horizontal,
                   children: [
@@ -86,6 +86,74 @@ class MainApp extends StatelessWidget {
             ],
           )
           ),
+          Container(
+                height: 25,
+              ),
+          Container(
+            height: 50,
+            width: 450,
+            decoration: 
+            BoxDecoration(
+              color: Colors.blue,
+              borderRadius: BorderRadius.circular(15)
+            ),
+            child: Center(
+              child: Text(
+              "PÁGINAS",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 35
+              ),
+            ),
+            )
+          ),
+          Container(
+            height: 15,
+          ),
+          Text(
+            "Clique nas imagens para se redirecionar entre as páginas.",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 20,
+            )
+          ),
+          Container(
+            height: 15,
+          ),
+          Column(
+            children: [
+              Container(
+              width: 400,
+              height: 60,
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                borderRadius: BorderRadius.circular(15)
+              ),
+              child: Center(
+                child: Text(
+                "CULTURA",
+                style: TextStyle(
+                  fontSize: 45,
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+              )
+              ),
+              InkWell(
+                child: Image.asset(
+                  "img/imagembonita1.png",
+                  width: 350
+                ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) =>
+                    const CulturaPag())
+                  );
+                },
+              )  
+            ],
+          )
           ],
         )
         )
