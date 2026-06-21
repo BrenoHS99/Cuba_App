@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-void culturapag() {
-  runApp(const CulturaPag());
+void religiaopag() {
+  runApp(const ReligiaoPag());
 }
 
-class CulturaPag extends StatelessWidget {
-  const CulturaPag({super.key});
+class ReligiaoPag extends StatelessWidget {
+  const ReligiaoPag({super.key});
 
 @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class CulturaPag extends StatelessWidget {
               ),
             child: Center(
               child: Text(
-              "CULTURA",
+              "RELIGIÃO",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 35
@@ -57,7 +57,7 @@ class CulturaPag extends StatelessWidget {
                   borderRadius: BorderRadius.circular(15)
                 ),
                 child: Text(
-                  "A cultura cubana é resultado da mistura de influências indígenas, espanholas e africanas. Cuba é conhecida mundialmente por sua música e dança, com ritmos como a salsa e o son cubano. O país também se destaca por suas tradições artísticas, literatura e pela forte presença de manifestações culturais ligadas às raízes africanas e ao catolicismo.",
+                  "A religião mais praticada em Cuba é o cristianismo, principalmente o catolicismo. Além disso, a Santería também tem grande presença no país, sendo uma religião de origem afro-cubana bastante ligada à cultura da população. Dessa forma, Cuba apresenta uma diversidade religiosa, com diferentes crenças presentes na sociedade.",
                   textAlign: TextAlign.justify,
                   style: TextStyle(
                     fontSize: 25,
@@ -69,7 +69,7 @@ class CulturaPag extends StatelessWidget {
             height: 15
            ),
            Image.asset(
-            "img/cultura.png",
+            "img/religiao.png",
             width: 500,
           ),
           ],

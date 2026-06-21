@@ -1,5 +1,11 @@
-import 'package:flutter/material.dart';
+import 'package:cuba_app/cinema.dart';
+import 'package:cuba_app/culinaria.dart';
 import 'package:cuba_app/cultura.dart';
+import 'package:cuba_app/folclore.dart';
+import 'package:cuba_app/lendas.dart';
+import 'package:cuba_app/religiao.dart';
+import 'package:flutter/material.dart';
+import 'package:cuba_app/historia.dart';
 
 void main() {
   runApp(const MaterialApp (title: "App",
@@ -87,8 +93,8 @@ class MainApp extends StatelessWidget {
           )
           ),
           Container(
-                height: 25,
-              ),
+            height: 25,
+          ),
           Container(
             height: 50,
             width: 450,
@@ -131,6 +137,39 @@ class MainApp extends StatelessWidget {
               ),
               child: Center(
                 child: Text(
+                "HISTÓRIA",
+                style: TextStyle(
+                  fontSize: 45,
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+              )
+              ),
+              InkWell(
+                child: Image.asset(
+                  "img/cubahistoria.png",
+                  width: 350
+                ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) =>
+                    const HistoriaPag())
+                  );
+                },
+              ),
+              Container(
+                height: 15,
+              ),
+              Container(
+              width: 400,
+              height: 60,
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                borderRadius: BorderRadius.circular(15)
+              ),
+              child: Center(
+                child: Text(
                 "CULTURA",
                 style: TextStyle(
                   fontSize: 45,
@@ -141,7 +180,7 @@ class MainApp extends StatelessWidget {
               ),
               InkWell(
                 child: Image.asset(
-                  "img/imagembonita1.png",
+                  "img/cultura.png",
                   width: 350
                 ),
                 onTap: () {
@@ -151,7 +190,196 @@ class MainApp extends StatelessWidget {
                     const CulturaPag())
                   );
                 },
-              )  
+              ),
+              Container(
+                height: 15,
+              ),
+              Row(
+                spacing: 60,
+                children: [
+                  Column(
+                    children: [
+                      Container(
+                        width: 250,
+                        height: 45,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(15)
+                        ),
+                        child: Center(
+                          child: Text(
+                            "CULINÁRIA",
+                            style: TextStyle(
+                              fontSize: 35,
+                              fontWeight: FontWeight.bold
+                            ),
+                          ),
+                        )
+                      ),
+                      InkWell(
+                        child: Image.asset(
+                          "img/ropavieja.png",
+                          width: 225
+                        ),
+                        onTap: () {
+                          Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) =>
+                          const CulinariaPag())
+                          );
+                        },
+                      ) 
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        width: 250,
+                        height: 45,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(15)
+                        ),
+                        child: Center(
+                          child: Text(
+                            "FOLCLORE",
+                            style: TextStyle(
+                              fontSize: 35,
+                              fontWeight: FontWeight.bold
+                            ),
+                          ),
+                        )
+                      ),
+                      InkWell(
+                        child: Image.asset(
+                          "img/folclore.png",
+                          width: 225
+                        ),
+                        onTap: () {
+                          Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) =>
+                          const FolclorePag())
+                          );
+                        },
+                      ) 
+                    ],
+                  ),
+                ],
+              ),
+              Container(
+                height: 25,
+              ),
+              Row(
+                spacing: 60,
+                children: [
+                  Column(
+                    children: [
+                      Container(
+                        width: 250,
+                        height: 45,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(15)
+                        ),
+                        child: Center(
+                          child: Text(
+                            "RELIGIÃO",
+                            style: TextStyle(
+                              fontSize: 35,
+                              fontWeight: FontWeight.bold
+                            ),
+                          ),
+                        )
+                      ),
+                      InkWell(
+                        child: Image.asset(
+                          "img/religiao.png",
+                          width: 225
+                        ),
+                        onTap: () {
+                          Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) =>
+                          const ReligiaoPag())
+                          );
+                        },
+                      ) 
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        width: 250,
+                        height: 45,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(15)
+                        ),
+                        child: Center(
+                          child: Text(
+                            "CINEMA",
+                            style: TextStyle(
+                              fontSize: 35,
+                              fontWeight: FontWeight.bold
+                            ),
+                          ),
+                        )
+                      ),
+                      InkWell(
+                        child: Image.asset(
+                          "img/cinema.png",
+                          width: 225
+                        ),
+                        onTap: () {
+                          Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) =>
+                          const CinemaPag())
+                          );
+                        },
+                      ) 
+                    ],
+                  ),
+                ],
+              ),
+              Container(
+                height: 25,
+              ),
+              Column(
+                    children: [
+                      Container(
+                        width: 250,
+                        height: 45,
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(15)
+                        ),
+                        child: Center(
+                          child: Text(
+                            "LENDAS",
+                            style: TextStyle(
+                              fontSize: 35,
+                              fontWeight: FontWeight.bold
+                            ),
+                          ),
+                        )
+                      ),
+                      InkWell(
+                        child: Image.asset(
+                          "img/lendas.png",
+                          width: 225
+                        ),
+                        onTap: () {
+                          Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) =>
+                          const LendasPag())
+                          );
+                        },
+                      ) 
+                    ],
+                  ),
             ],
           )
           ],

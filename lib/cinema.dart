@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-void culturapag() {
-  runApp(const CulturaPag());
+void cinemapag() {
+  runApp(const CinemaPag());
 }
 
-class CulturaPag extends StatelessWidget {
-  const CulturaPag({super.key});
+class CinemaPag extends StatelessWidget {
+  const CinemaPag({super.key});
 
 @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class CulturaPag extends StatelessWidget {
               ),
             child: Center(
               child: Text(
-              "CULTURA",
+              "CINEMA",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 35
@@ -57,7 +57,7 @@ class CulturaPag extends StatelessWidget {
                   borderRadius: BorderRadius.circular(15)
                 ),
                 child: Text(
-                  "A cultura cubana é resultado da mistura de influências indígenas, espanholas e africanas. Cuba é conhecida mundialmente por sua música e dança, com ritmos como a salsa e o son cubano. O país também se destaca por suas tradições artísticas, literatura e pela forte presença de manifestações culturais ligadas às raízes africanas e ao catolicismo.",
+                  "O cinema cubano é caracterizado por produções de menor escala, mas com forte foco em temas culturais do país. Muitas obras buscam retratar a realidade da população, abordando questões do cotidiano e desafios sociais. Além disso, o cinema de Cuba conta com a ajuda da ICAIC (Instituto Cubano de Arte e Indústria Cinematográfica), que apoia parte das produções. Exemplos de filmes cubanos incluem Morango e Chocolate (1993), A Morte de um Burocrata (1966) e Memórias do Subdesenvolvimento (1968).",
                   textAlign: TextAlign.justify,
                   style: TextStyle(
                     fontSize: 25,
@@ -69,7 +69,7 @@ class CulturaPag extends StatelessWidget {
             height: 15
            ),
            Image.asset(
-            "img/cultura.png",
+            "img/cinema.png",
             width: 500,
           ),
           ],

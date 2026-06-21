@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-void culturapag() {
-  runApp(const CulturaPag());
+void lendaspag() {
+  runApp(const LendasPag());
 }
 
-class CulturaPag extends StatelessWidget {
-  const CulturaPag({super.key});
+class LendasPag extends StatelessWidget {
+  const LendasPag({super.key});
 
 @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class CulturaPag extends StatelessWidget {
               ),
             child: Center(
               child: Text(
-              "CULTURA",
+              "LENDAS",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 35
@@ -57,7 +57,7 @@ class CulturaPag extends StatelessWidget {
                   borderRadius: BorderRadius.circular(15)
                 ),
                 child: Text(
-                  "A cultura cubana é resultado da mistura de influências indígenas, espanholas e africanas. Cuba é conhecida mundialmente por sua música e dança, com ritmos como a salsa e o son cubano. O país também se destaca por suas tradições artísticas, literatura e pela forte presença de manifestações culturais ligadas às raízes africanas e ao catolicismo.",
+                  "As lendas cubanas fazem parte da cultura e são transmitidas principalmente de forma oral ao longo das gerações. Costumam envolver histórias misteriosas e seres espirituais que fazem parte das histórias contadas pelo povo. Entre os exemplos mais conhecidos estão histórias ligadas à religião Santería, como a figura de Ochún e Yemayá.",
                   textAlign: TextAlign.justify,
                   style: TextStyle(
                     fontSize: 25,
@@ -69,7 +69,7 @@ class CulturaPag extends StatelessWidget {
             height: 15
            ),
            Image.asset(
-            "img/cultura.png",
+            "img/lendas.png",
             width: 500,
           ),
           ],

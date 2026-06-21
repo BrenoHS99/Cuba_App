@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-void culturapag() {
-  runApp(const CulturaPag());
+void folclorepag() {
+  runApp(const FolclorePag());
 }
 
-class CulturaPag extends StatelessWidget {
-  const CulturaPag({super.key});
+class FolclorePag extends StatelessWidget {
+  const FolclorePag({super.key});
 
 @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class CulturaPag extends StatelessWidget {
               ),
             child: Center(
               child: Text(
-              "CULTURA",
+              "FOLCLORE",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 35
@@ -57,7 +57,7 @@ class CulturaPag extends StatelessWidget {
                   borderRadius: BorderRadius.circular(15)
                 ),
                 child: Text(
-                  "A cultura cubana é resultado da mistura de influências indígenas, espanholas e africanas. Cuba é conhecida mundialmente por sua música e dança, com ritmos como a salsa e o son cubano. O país também se destaca por suas tradições artísticas, literatura e pela forte presença de manifestações culturais ligadas às raízes africanas e ao catolicismo.",
+                  "O folclore cubano se expressa principalmente em manifestações populares que fazem parte do dia a dia da população. Uns dos elementos mais importantes incluem as músicas tradicionais cubanas, como o son cubano e a rumba, além de danças características do povo cubano. As festas populares também têm grande destaque, principalmente o Carnaval, por conta dos desfiles, fantasias, música e celebrações nas ruas.",
                   textAlign: TextAlign.justify,
                   style: TextStyle(
                     fontSize: 25,
@@ -69,7 +69,7 @@ class CulturaPag extends StatelessWidget {
             height: 15
            ),
            Image.asset(
-            "img/cultura.png",
+            "img/folclore.png",
             width: 500,
           ),
           ],
