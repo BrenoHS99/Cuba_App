@@ -7,7 +7,7 @@
 ## Tema do Aplicativo
 Aplicativo com informações diversas sobre o país de Cuba, desde a sua história até fatos sobre a sua cultura.
 
-## Páginas da Wiki:
+## Sumário da Wiki
 - [Página inicial](https://github.com/BrenoHS99/Cuba_App/wiki)
 - [Pesquisa](https://github.com/BrenoHS99/Cuba_App/wiki/Pesquisa)
 - [Roteiro Base do Jogo](https://github.com/BrenoHS99/Cuba_App/wiki/Roteiro-Base-do-Jogo)
